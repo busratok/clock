@@ -10,7 +10,7 @@ const getTime = () => {
   const hours = new Date().getHours();
   const minutes = new Date().getMinutes();
   const seconds = new Date().getSeconds();
-  // hourHand.style.transform = `rotate(${hours * 30}deg)`;
+  hourHand.style.transform = `rotate(${hours * 30}deg)`;
   minuteHand.style.transform = `rotate(${minutes * 6}deg)`;
   secondHand.style.transform = `rotate(${seconds * 6}deg)`;
   digitalHour.innerText = hours < 10 ? `0${hours}` : hours;
