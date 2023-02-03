@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  border-radius: 50%;
+  position: relative;
+  background-image: url("./clock-without-hands.jpg");
+  background-size: contain;
+  height: 400px;
+  width: 400px;
+}
+.digital {
+  position: absolute;
+  top: 47%;
+  left: 22%;
+  border-radius: 5px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 1px 3px;
+  z-index: 5;
+  font-size: 1.2rem;
+}
+.digital-hour {
+  font-weight: bold;
+}
+.digital-second {
+  color: red;
+}
+.dot {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 4;
+}
+.hour {
+  position: absolute;
+  background-color: black;
+  width: 6px;
+  height: 80px;
+  z-index: 1;
+  top: 29%;
+  left: 49.4%;
+  transform-origin: bottom center;
+}
+.minute {
+  position: absolute;
+  background-color: black;
+  width: 4px;
+  height: 110px;
+  z-index: 2;
+  top: 22.5%;
+  left: 49.5%;
+  transform-origin: bottom center;
+}
+
+.second {
+  position: absolute;
+  background-color: red;
+  width: 2px;
+  height: 130px;
+  z-index: 3;
+  top: 17%;
+  left: 49.7%;
+  transform-origin: bottom center;
+}
