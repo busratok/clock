@@ -14,6 +14,7 @@ body {
   position: relative;
   background-image: url("./clock-without-hands.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
   height: 400px;
   width: 400px;
 }
@@ -52,7 +53,7 @@ body {
   width: 6px;
   height: 80px;
   z-index: 1;
-  top: 29%;
+  top: 30%;
   left: 49.4%;
   transform-origin: bottom center;
 }
@@ -76,4 +77,27 @@ body {
   top: 17%;
   left: 49.7%;
   transform-origin: bottom center;
+}
+@media screen and (max-width: 400px) {
+  .clock {
+    width: 350px;
+    height: 350px;
+  }
+  .digital {
+    font-size: 1rem;
+  }
+  .hour {
+    height: 70px;
+    top: 30%;
+    left: 49.4%;
+  }
+  .minute {
+    height: 100px;
+    top: 21.5%;
+    left: 49.5%;
+  }
+  .second {
+    height: 120px;
+    top: 16%;
+  }
 }
